@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Extension Popup</title>
+</head>
+<body>
+  <button id="tcschart">Load TCS Chart</button>
+  <button id="dashboard">Dashboard</button>
+  <button id="orders">Orders</button>
+  <button id="holdings">Holdings</button>
+  <button id="positions">Positions</button>
+  <div><input type="text" id="shareNameInput" placeholder="Share Name">
+    <input type="number" id="quantityInput" placeholder="Quantity">
+    <input type="number" id="priceInput" placeholder="Price">
+    <select id="orderTypeSelect">
+      <option value="limit">Limit</option>
+      <option value="market">Market</option>
+    </select>
+    <select id="transactionTypeSelect">
+      <option value="intraday">Intraday</option>
+      <option value="delivery">Delivery</option>
+    </select>
+  <button id="buy">Buy</button>
+  <button id="sell">Sell</button>
+  <button id="hoverButton">Hovercheck</button>
+  <script src="popup.js"></script>
+</body>
+</html>

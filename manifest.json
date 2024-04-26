@@ -1,0 +1,19 @@
+{
+    "name" : " extension+zerodha",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description" : "Some descp here",
+    "content_scripts" : [
+        {
+            "js" : ["main.js"],
+            "matches" : ["https://kite.zerodha.com/*"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+      },
+	"permissions": ["scripting","activeTab"],
+	"action": {
+    "default_popup": "popup.html"
+	}
+}
