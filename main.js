@@ -64,4 +64,14 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
         //   divToHover.dispatchEvent(mouseOverEvent);
         addElement()
         }
+        if (message.action === "mouseleave") {
+          //   const divToHover = document.querySelector("#app > div.container.wrapper > div.container-left > div > div.instruments > div > div.vddl-draggable.instrument.up.index3");
+          //   const mouseOverEvent = new MouseEvent('mouseover', {
+          //     bubbles: true,
+          //     cancelable: true,
+          //     view: window
+          //   });
+          //   divToHover.dispatchEvent(mouseOverEvent);
+          document.querySelector("#app > div.container.wrapper > div.container-left > div > div.instruments > div > div.vddl-draggable.instrument.up.index3 > div > span").remove()
+          }
   });
